@@ -4,7 +4,7 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const contactLinks = [
   { icon: Mail, label: "devmahalle@email.com", href: "mailto:devmahalle@email.com", color: "primary" },
-  { icon: Phone, label: "+91 XXXXX XXXXX", href: "#", color: "primary" },
+  { icon: Phone, label: "+91 84595 77556", href: "tel:+918459577556", color: "primary" },
   { icon: Linkedin, label: "LinkedIn Profile", href: "https://linkedin.com", color: "accent" },
   { icon: Github, label: "GitHub Profile", href: "https://github.com", color: "accent" },
 ];
