@@ -58,7 +58,7 @@ const Hero = () => {
 
       <div className="container grid md:grid-cols-2 gap-12 items-center relative z-10">
         {/* Text */}
-        <div className="space-y-7 opacity-0 animate-fade-up">
+        <div className="space-y-7 animate-fade-up" style={{ animationFillMode: 'both' }}>
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-medium tracking-wide backdrop-blur-sm">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
@@ -138,7 +138,7 @@ const Hero = () => {
         </div>
 
         {/* Profile image */}
-        <div className="flex justify-center opacity-0 animate-fade-up [animation-delay:200ms]">
+        <div className="flex justify-center animate-fade-up [animation-delay:200ms]" style={{ animationFillMode: 'both' }}>
           <div className="relative">
             {/* Decorative ring */}
             <div className="absolute -inset-4 rounded-3xl border border-primary/10 animate-[pulse_4s_ease-in-out_infinite]" />
