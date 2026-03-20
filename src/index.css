@@ -77,6 +77,21 @@
     box-shadow: 0 0 40px -8px hsl(var(--glow-accent) / 0.3);
   }
 
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  @keyframes scrollDot {
+    0%, 100% { opacity: 0.3; transform: translateY(0); }
+    50% { opacity: 1; transform: translateY(4px); }
+  }
+
   .gradient-text {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-[hsl(217,92%,62%)] to-[hsl(265,85%,65%)];
   }
