@@ -138,7 +138,7 @@ const Hero = () => {
         </div>
 
         {/* Profile image */}
-        <div className="flex justify-center opacity-0 animate-fade-up [animation-delay:200ms]">
+        <div className="flex justify-center animate-fade-up [animation-delay:200ms]" style={{ animationFillMode: 'both' }}>
           <div className="relative">
             {/* Decorative ring */}
             <div className="absolute -inset-4 rounded-3xl border border-primary/10 animate-[pulse_4s_ease-in-out_infinite]" />
