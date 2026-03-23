@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Mail, Phone, Linkedin, Github, Send, ArrowUpRight, MapPin } from "lucide-react";
+import { Mail, Phone, Linkedin, Github, Send, ArrowUpRight, MapPin, Loader2, CheckCircle } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import emailjs from "@emailjs/browser";
 
 const contactLinks = [
   { icon: Mail, label: "devmahalle007@gmail.com", href: "mailto:devmahalle007@gmail.com", color: "primary" },
