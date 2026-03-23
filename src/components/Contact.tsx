@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Mail, Phone, Linkedin, Github, Send, ArrowUpRight, MapPin } from "lucide-react";
+import { Mail, Phone, Linkedin, Github, Send, ArrowUpRight, MapPin, Loader2, CheckCircle } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import emailjs from "@emailjs/browser";
 
 const contactLinks = [
   { icon: Mail, label: "devmahalle007@gmail.com", href: "mailto:devmahalle007@gmail.com", color: "primary" },
@@ -13,11 +14,31 @@ const Contact = () => {
   const ref = useScrollReveal();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [focused, setFocused] = useState<string | null>(null);
+  const [sending, setSending] = useState(false);
+  const [sent, setSent] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Message sent! (demo)");
-    setForm({ name: "", email: "", message: "" });
+    setSending(true);
+    try {
+      await emailjs.send(
+        "service_tfm6p1h",
+        "template_yc8xtjs",
+        {
+          from_name: form.name,
+          from_email: form.email,
+          message: form.message,
+        },
+        "OV1Dwi_aUmvtVyYfV"
+      );
+      setSent(true);
+      setForm({ name: "", email: "", message: "" });
+      setTimeout(() => setSent(false), 4000);
+    } catch (error) {
+      alert("Failed to send message. Please try again.");
+    } finally {
+      setSending(false);
+    }
   };
 
   const inputClasses = (field: string) =>
@@ -133,9 +154,16 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-semibold text-sm hover:shadow-[0_0_30px_-5px_hsl(var(--primary)/0.5)] active:scale-[0.97] transition-all duration-300"
+                disabled={sending}
+                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-semibold text-sm hover:shadow-[0_0_30px_-5px_hsl(var(--primary)/0.5)] active:scale-[0.97] transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                <Send size={16} /> Send Message
+                {sending ? (
+                  <><Loader2 size={16} className="animate-spin" /> Sending...</>
+                ) : sent ? (
+                  <><CheckCircle size={16} /> Message Sent!</>
+                ) : (
+                  <><Send size={16} /> Send Message</>
+                )}
               </button>
             </form>
           </div>
