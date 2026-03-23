@@ -154,9 +154,16 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-semibold text-sm hover:shadow-[0_0_30px_-5px_hsl(var(--primary)/0.5)] active:scale-[0.97] transition-all duration-300"
+                disabled={sending}
+                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-semibold text-sm hover:shadow-[0_0_30px_-5px_hsl(var(--primary)/0.5)] active:scale-[0.97] transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                <Send size={16} /> Send Message
+                {sending ? (
+                  <><Loader2 size={16} className="animate-spin" /> Sending...</>
+                ) : sent ? (
+                  <><CheckCircle size={16} /> Message Sent!</>
+                ) : (
+                  <><Send size={16} /> Send Message</>
+                )}
               </button>
             </form>
           </div>
