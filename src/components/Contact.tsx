@@ -14,11 +14,31 @@ const Contact = () => {
   const ref = useScrollReveal();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [focused, setFocused] = useState<string | null>(null);
+  const [sending, setSending] = useState(false);
+  const [sent, setSent] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Message sent! (demo)");
-    setForm({ name: "", email: "", message: "" });
+    setSending(true);
+    try {
+      await emailjs.send(
+        "service_tfm6p1h",
+        "template_yc8xtjs",
+        {
+          from_name: form.name,
+          from_email: form.email,
+          message: form.message,
+        },
+        "OV1Dwi_aUmvtVyYfV"
+      );
+      setSent(true);
+      setForm({ name: "", email: "", message: "" });
+      setTimeout(() => setSent(false), 4000);
+    } catch (error) {
+      alert("Failed to send message. Please try again.");
+    } finally {
+      setSending(false);
+    }
   };
 
   const inputClasses = (field: string) =>
