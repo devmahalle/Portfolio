@@ -5,6 +5,14 @@ import attendanceImg from "@/assets/project-attendance.jpg";
 
 const projects = [
   {
+    title: "AWS Scalable Web App",
+    subtitle: "Using Terraform",
+    description:
+      "Designed and deployed scalable AWS infrastructure using Terraform including VPC, subnets, security groups, and EC2 web server.",
+    image: farmlandImg,
+    tags: ["AWS", "Terraform", "IaC", "Cloud"],
+  },
+  {
     title: "Farm Land Market",
     description:
       "A platform designed to help users buy and sell farmland efficiently, reducing dependency on brokers and simplifying the process.",
