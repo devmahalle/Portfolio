@@ -10,7 +10,7 @@ const projects = [
     subtitle: "Using Terraform",
     description:
       "Designed and deployed scalable AWS infrastructure using Terraform including VPC, subnets, security groups, and EC2 web server.",
-    image: farmlandImg,
+    image: awsTerraformImg,
     tags: ["AWS", "Terraform", "IaC", "Cloud"],
   },
   {
