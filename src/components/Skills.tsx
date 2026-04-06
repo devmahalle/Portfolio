@@ -1,4 +1,4 @@
-import { Cloud, Network, Container, Terminal, GitBranch } from "lucide-react";
+import { Cloud, Network, Container, Terminal, GitBranch, Blocks } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { useEffect, useRef, useState } from "react";
 
@@ -8,6 +8,7 @@ const skills = [
   { name: "Docker", icon: Container, level: 65, color: "accent", desc: "Containers, Compose, Images" },
   { name: "Linux OS", icon: Terminal, level: 80, color: "primary", desc: "Ubuntu, CentOS, Shell scripting" },
   { name: "Git & GitHub", icon: GitBranch, level: 85, color: "accent", desc: "Version control, CI/CD, PRs" },
+  { name: "Terraform", icon: Blocks, level: 60, color: "primary", desc: "IaC, Modules, State management" },
 ];
 
 const AnimatedBar = ({ level, color }: { level: number; color: string }) => {
