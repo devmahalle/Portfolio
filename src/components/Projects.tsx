@@ -2,6 +2,7 @@ import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import farmlandImg from "@/assets/project-farmland.jpg";
 import attendanceImg from "@/assets/project-attendance.jpg";
+import awsTerraformImg from "@/assets/project-aws-terraform.jpg";
 
 const projects = [
   {
