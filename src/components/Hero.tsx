@@ -2,7 +2,7 @@ import { ArrowDown, Github, Linkedin, Cloud, Server, Shield } from "lucide-react
 import { useEffect, useState } from "react";
 import profileImg from "@/assets/profile.jpg";
 
-const roles = ["Cloud Engineer", "AWS Specialist", "Azure Expert", "DevOps Enthusiast"];
+const roles = ["Project Coordinator & Cloud Engineer", "AWS Specialist", "Azure Expert", "Cloud Engineer"];
 
 const Hero = () => {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -94,7 +94,7 @@ const Hero = () => {
             {[
               { value: "5+", label: "Projects" },
               { value: "3+", label: "Certifications" },
-              { value: "2026", label: "Graduating" },
+              { value: "2026", label: "Graduated" },
             ].map((stat) => (
               <div key={stat.label} className="space-y-0.5">
                 <p className="text-2xl font-bold gradient-text">{stat.value}</p>
@@ -164,14 +164,14 @@ const Hero = () => {
 
             {/* Floating badge - bottom right */}
             <div className="absolute -bottom-3 -right-3 glass rounded-xl px-4 py-2.5 glow-accent animate-[float_5s_ease-in-out_infinite_1s]">
-              <p className="text-xs font-bold gradient-text">Cloud Engineer</p>
-              <p className="text-[10px] text-muted-foreground">Infrastructure & DevOps</p>
+              <p className="text-xs font-bold gradient-text">Project Coordinator & Cloud Engineer</p>
+              <p className="text-[10px] text-muted-foreground">Cloud & Infrastructure</p>
             </div>
 
             {/* Experience badge */}
             <div className="absolute top-1/2 -right-6 -translate-y-1/2 glass rounded-lg px-3 py-1.5 animate-[float_6s_ease-in-out_infinite_2s]">
-              <p className="text-[10px] text-muted-foreground">Fresher</p>
-              <p className="text-xs font-semibold text-primary">2026 Grad</p>
+              <p className="text-[10px] text-muted-foreground">Graduated</p>
+              <p className="text-xs font-semibold text-primary">2026</p>
             </div>
           </div>
         </div>

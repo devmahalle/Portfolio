@@ -63,7 +63,7 @@ const About = () => {
                 <p className="text-sm font-medium">BTech in Computer Science</p>
                 <p className="text-sm text-muted-foreground">MIT ADT University</p>
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium mt-1">
-                  <Calendar size={12} /> Class of 2026
+                  <Calendar size={12} /> Graduated 2026
                 </div>
               </div>
             </div>
@@ -75,8 +75,8 @@ const About = () => {
               </div>
               <h3 className="font-semibold text-lg">Current Status</h3>
               <div className="space-y-1.5">
-                <p className="text-sm font-medium">Aspiring Cloud Engineer</p>
-                <p className="text-sm text-muted-foreground">Open to internships & full-time roles</p>
+                <p className="text-sm font-medium">Project Coordinator & Cloud Engineer</p>
+                <p className="text-sm text-muted-foreground">Open to full-time roles</p>
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-medium mt-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
                   Actively seeking

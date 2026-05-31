@@ -69,7 +69,7 @@ const Contact = () => {
                 <span className="gradient-text">together</span>
               </h2>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Feel free to reach out for collaborations, internships, or just a friendly chat about cloud technologies.
+                Feel free to reach out for collaborations or just a friendly chat about cloud technologies.
               </p>
             </div>
 

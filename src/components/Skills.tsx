@@ -75,7 +75,7 @@ const Skills = () => {
               <div className="grid grid-cols-3 gap-4 text-center">
                 {[
                   { label: "Cloud", value: "75%" },
-                  { label: "DevOps", value: "70%" },
+                  { label: "Infrastructure", value: "70%" },
                   { label: "Systems", value: "80%" },
                 ].map((s) => (
                   <div key={s.label} className="space-y-1">
