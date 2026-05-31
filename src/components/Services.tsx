@@ -3,7 +3,7 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const items = [
   { icon: Rocket, title: "Internships", desc: "Eager to contribute and learn at forward-thinking companies." },
-  { icon: Users, title: "Collaborations", desc: "Open to working on cloud and DevOps projects together." },
+  { icon: Users, title: "Collaborations", desc: "Open to working on cloud and infrastructure projects together." },
   { icon: MessageSquare, title: "Freelance", desc: "Available for small cloud infrastructure tasks." },
 ];
 

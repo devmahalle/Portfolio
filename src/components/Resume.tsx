@@ -24,7 +24,7 @@ const Resume = () => {
               Download My <span className="gradient-text">Resume</span>
             </h2>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-lg">
-              Get a detailed overview of my education, skills, projects, and cloud engineering experience.
+              Get a detailed overview of my education, skills, projects, and project coordination & cloud engineering experience.
             </p>
           </div>
 

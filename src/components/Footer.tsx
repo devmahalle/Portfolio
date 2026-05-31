@@ -10,7 +10,7 @@ const Footer = () => (
         {/* Left - brand */}
         <div className="space-y-2">
           <p className="text-lg font-bold gradient-text">{"<Dev />"}</p>
-          <p className="text-xs text-muted-foreground">Cloud Engineer · AWS · Azure</p>
+          <p className="text-xs text-muted-foreground">Project Coordinator & Cloud Engineer · AWS · Azure</p>
         </div>
 
         {/* Center - copyright */}
