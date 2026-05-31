@@ -2,7 +2,7 @@ import { ArrowDown, Github, Linkedin, Cloud, Server, Shield } from "lucide-react
 import { useEffect, useState } from "react";
 import profileImg from "@/assets/profile.jpg";
 
-const roles = ["Project Coordinator & Cloud Engineer", "AWS Specialist", "Azure Expert", "Cloud Engineer"];
+const roles = ["Project Coordinator", "AWS Specialist", "Azure Expert", "Cloud Engineer"];
 
 const Hero = () => {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -164,7 +164,7 @@ const Hero = () => {
 
             {/* Floating badge - bottom right */}
             <div className="absolute -bottom-3 -right-3 glass rounded-xl px-4 py-2.5 glow-accent animate-[float_5s_ease-in-out_infinite_1s]">
-              <p className="text-xs font-bold gradient-text">Project Coordinator & Cloud Engineer</p>
+              <p className="text-xs font-bold gradient-text">Project Coordinator</p>
               <p className="text-[10px] text-muted-foreground">Cloud & Infrastructure</p>
             </div>
 

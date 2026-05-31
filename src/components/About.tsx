@@ -75,7 +75,7 @@ const About = () => {
               </div>
               <h3 className="font-semibold text-lg">Current Status</h3>
               <div className="space-y-1.5">
-                <p className="text-sm font-medium">Project Coordinator & Cloud Engineer</p>
+                <p className="text-sm font-medium">Project Coordinator</p>
                 <p className="text-sm text-muted-foreground">Open to full-time roles</p>
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-medium mt-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
