@@ -92,7 +92,7 @@ const Hero = () => {
           {/* Stats row */}
           <div className="flex gap-8 py-2">
             {[
-              { value: "5+", label: "Projects" },
+              { value: "5+", label: "Certificates" },
               { value: "3+", label: "Certifications" },
               { value: "2026", label: "Graduated" },
             ].map((stat) => (
