@@ -7,7 +7,7 @@ const contactLinks = [
   { icon: Mail, label: "devmahalle007@gmail.com", href: "mailto:devmahalle007@gmail.com", color: "primary" },
   { icon: Phone, label: "+91 84595 77556", href: "tel:+918459577556", color: "primary" },
   { icon: Linkedin, label: "LinkedIn Profile", href: "https://www.linkedin.com/in/dev-mahalle-94888a254/", color: "accent" },
-  { icon: Github, label: "GitHub Profile", href: "https://github.com", color: "accent" },
+  { icon: Github, label: "GitHub Profile", href: "https://github.com/devmahalle", color: "accent" },
 ];
 
 const Contact = () => {
