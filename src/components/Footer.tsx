@@ -24,7 +24,7 @@ const Footer = () => (
         {/* Right - socials + back to top */}
         <div className="flex items-center justify-end gap-3">
           {[
-            { icon: Linkedin, href: "https://linkedin.com" },
+            { icon: Linkedin, href: "https://www.linkedin.com/in/dev-mahalle-94888a254/" },
             { icon: Github, href: "https://github.com" },
           ].map(({ icon: Icon, href }) => (
             <a
